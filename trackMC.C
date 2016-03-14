@@ -110,9 +110,7 @@ histo1 = new TH1F("histo1","Reciprocals of Measured PTs",100,1/(momentum+range),
 histo1->SetMarkerStyle(21);
  }
 
-//================================================
-// random number generation
-//================================================
+
 
 TRandom ran;
     gRandom->SetSeed();
