@@ -1,9 +1,6 @@
-// histograms filled and drawn in a loop
+
 void histo() {
-//
-// To see the output of this macro, click begin_html <a href="gif/hsum.gif" >here</a> end_html
-//    Simple example illustrating how to use the C++ interpreter	
-//    to fill histograms in a loop and show the graphics results
+
 
 
   TCanvas *c1 = new TCanvas("c1","The HSUM example",200,10,600,400);
