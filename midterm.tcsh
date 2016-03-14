@@ -1,0 +1,2 @@
+
+./midterm.cpp $a
