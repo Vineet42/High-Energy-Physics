@@ -10,14 +10,17 @@ void graph() {
    Double_t width = 2.5;
    Double_t E = 91.2;
    Double_t M = 91.2;
+   
    for (Int_t i=0;i<n/2;i++) {
      x[i] = E - (4-i)*width;
      y[i] = 1/((x[i] - M)^2)+(width/2));
      }
+     
    for (Int_t i=n/2;i<n;i++) {
      x[i] = E + (i-4)*width;
      y[i] = 1/((x[i] - M)^2)+(width/2));
      }
+     
    TGraph *gr = new TGraph(n,x,y);
    gr->SetLineColor(2);
    gr->SetLineWidth(4);
