@@ -1,3 +1,6 @@
+// Code Body - Vineet Pande
+// Comments and Troubleshooting - Anat Berday-Sacks and Alison Duck
+
 #include <iostream> //defines objects for input and output
 #include <string>// include the library that defines the file type of string
 #include <stdlib.h> //include the standard library
