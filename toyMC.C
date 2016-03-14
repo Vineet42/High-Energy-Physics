@@ -9,7 +9,7 @@ assume calibration using gamma+jets.  make up calibration data
 with errors linear in E.  fit.
 smear particles energies using fit slope and intercept and errors.
 reconstruct mass
-store results in ntuple
+
 */
 
 // function to calculate the z component of momentum from the mass
@@ -84,7 +84,7 @@ c1->SetFrameBorderMode(0);
  t1.Branch("pzbs2",&pz1,"pzbs2/F");
 
 
- // TNtuple *ntuple = new TNtuple("ntuple","data from toy MC","e1:px1:py1:pz1:e2:px2:py2:pz2:eb1:pxb1:pyb1:pzb1:eb2:pxb2:pyb2:pzb2:ebs1:pxbs1:pybs1:pzbs1:ebs2:pxbs2:pybs2:ebs1");
+ 
 
 // book some histograms
 TH1F *histo1  = new TH1F("histo1","rapidity",20,-5.,5.);
@@ -185,11 +185,9 @@ gRandom->SetSeed();
      float mms = sqrt(pow(ees,2.)-pow(pxxs,2.)-pow(pyys,2.)-pow(pzzs,2.));
      histo7->Fill(mms);
 //********************************************************************
-     // fill ntuple
-
-     //     ntuple->Fill(e1,px1,py1,pz1,e2,px2,py2,pz2,eb1,pxb1,pyb1,pzb1,eb2,pxb2,pyb2,pzb2,ebs1,pxbs1,pybs1,pzbs1,ebs2,pxbs2,pybs2,pzbs2);
+    
      t1.Fill();
-     //     ntuple->Fill(e1,px1,py1,pz1,e2,px2,py2,pz2,eb1,pxb1,pyb1,pzb1,eb2,pxb2,pyb2,ebs1);
+
 
    }
 
