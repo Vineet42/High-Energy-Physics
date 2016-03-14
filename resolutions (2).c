@@ -6,10 +6,10 @@ some code to help us understand why and how resolutions affect our ability to me
 mass of a particle
 */
 
-// main routine
+
 void resolutions(){
 
-  // set debug mode
+
   bool idebug=0;
 
 // set up the display
@@ -25,10 +25,10 @@ c1->SetBorderSize(1);
 c1->SetFrameBorderMode(0);
 
 
-// book some histograms
+// histograms
 TH1F *histo1  = new TH1F("histo1","mass",1000,0.,200.);
 
-// setup random number generator
+// random number generator
 gRandom->SetSeed();
 
 
